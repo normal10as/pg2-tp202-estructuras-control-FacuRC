@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C5E66982-2FA7-42F8-A239-6C09EAE2B62E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>Estructuras_Control_Flujo._2_5</StartupObject>
+    <StartupObject>Estructuras_Control_Flujo._2_8</StartupObject>
     <RootNamespace>Estructuras_Control_Flujo</RootNamespace>
     <AssemblyName>Estructuras_Control_Flujo</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -46,6 +46,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -74,6 +77,9 @@
     <Compile Include="2_4.vb" />
     <Compile Include="2_5.vb" />
     <Compile Include="2_6.vb" />
+    <Compile Include="2_7.vb" />
+    <Compile Include="2_8.vb" />
+    <Compile Include="2_9.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -99,6 +105,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
