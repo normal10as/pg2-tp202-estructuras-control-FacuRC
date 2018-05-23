@@ -14,21 +14,24 @@
         If cantidad >= 10 And cantidad <= 50 Then
             descuento = 5
             subtotal = cantidad * precio
-            MontoDescontado = subtotal * descuento / 100
-            Console.WriteLine("Subtotal: " & subtotal & "Porcentaje descontado: " & descuento & " % " & " Monto Descontado: " & MontoDescontado & " EL total es: " & subtotal - MontoDescontado)
-        End If
+			MontoDescontado = subtotal * descuento / 100
+		End If
         If cantidad >= 51 And cantidad <= 250 Then
             descuento = 10
             subtotal = cantidad * precio
-            MontoDescontado = subtotal * descuento / 100
-            Console.WriteLine("Subtotal: " & subtotal & "Porcentaje descontado: " & descuento & " % " & " Monto Descontado: " & MontoDescontado & " EL total es: " & subtotal - MontoDescontado)
-        End If
-        If cantidad >= 251 Then
-            descuento = 20
-            subtotal = cantidad * precio
-            MontoDescontado = subtotal * descuento / 100
-            Console.WriteLine("Subtotal: " & subtotal & "Porcentaje descontado: " & descuento & " % " & " Monto Descontado: " & MontoDescontado & " EL total es: " & subtotal - MontoDescontado)
-        End If
-        Console.ReadKey()
+			MontoDescontado = subtotal * descuento / 100
+		End If
+		If cantidad >= 251 Then
+			descuento = 20
+			subtotal = cantidad * precio
+			MontoDescontado = subtotal * descuento / 100
+		End If
+		Console.WriteLine("El subtotal es: " & subtotal)
+		Console.WriteLine("El porcentaje Descontado es: " & descuento & "%")
+		Console.WriteLine("El monto descontado es: " & MontoDescontado)
+		Console.WriteLine("el total es:" & subtotal - MontoDescontado)
+
+
+		Console.ReadKey()
     End Sub
 End Module

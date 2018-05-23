@@ -14,11 +14,11 @@
         Diciembre = 12
     End Enum
     Sub main()
-        '2.5. CASE. Crear un programa con una enumeración para los meses del año. Ingresar un valor
-        'numérico y mostrar a que mes corresponde. Si el valor es inválido mostrar el mensaje
-        'correspondiente.
-        Dim Mes, x As Byte
-        Console.WriteLine("Ingrese un mes segun su numero: ")
+		'2.5. CASE. Crear un programa con una enumeración para los meses del año. Ingresar un valor
+		'numérico y mostrar a que mes corresponde. Si el valor es inválido mostrar el mensaje
+		'correspondiente.
+		Dim Mes As Byte
+		Console.WriteLine("Ingrese un mes segun su numero: ")
         Mes = Console.ReadLine
         Console.WriteLine("El mes que se desea buscar es el numero: " & Mes)
 
@@ -26,8 +26,8 @@
             Case Meses.Enero
                 Console.WriteLine("El mes numero 1 es: Enero")
             Case Meses.Febrero
-                Console.WriteLine("El mes numero 2 es: Febrero")
-            Case Meses.Marzo
+				Console.WriteLine("El mes numero 2 es: Febrero")
+			Case Meses.Marzo
                 Console.WriteLine("El mes numero 3 es: Marzo")
             Case Meses.Abril
                 Console.WriteLine("El mes numero 4 es: Abril")
@@ -46,8 +46,9 @@
             Case Meses.Noviembre
                 Console.WriteLine("El mes numero 11 es: Noviembre")
             Case Meses.Diciembre
-                Console.WriteLine("El mes numero 12 es: Diciembre")
-        End Select
+				Console.WriteLine("El mes numero 12 es: Diciembre")
+			Case Else
+		End Select
         Console.ReadKey()
     End Sub
 End Module

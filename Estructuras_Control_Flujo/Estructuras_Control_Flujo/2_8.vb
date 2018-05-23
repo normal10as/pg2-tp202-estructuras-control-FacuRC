@@ -20,7 +20,8 @@
         Diciembre
     End Enum
     Sub main()
-        Dim Mes, x, año As Int16
+        Dim Mes As Meses
+        Dim x, año As Int16
 
         Console.WriteLine("Ingrese un mes: ")
         Mes = Console.ReadLine
@@ -29,40 +30,30 @@
 
         Select Case Mes
             Case Meses.Enero
-                x = System.DateTime.DaysInMonth(año, Meses.Enero)
-                Console.WriteLine("La cantidad de dias de enero es: " & x)
-            Case Meses.Febrero
-                x = System.DateTime.DaysInMonth(año, Meses.Febrero)
+                Console.WriteLine(Mes.ToString & " La cantidad de dias de enero es: 31")
+			Case Meses.Febrero
+
+				x = System.DateTime.DaysInMonth(año, Meses.Febrero)
                 Console.WriteLine("La cantidad de dias de enero es: " & x)
             Case Meses.Marzo
-                x = System.DateTime.DaysInMonth(año, Meses.Marzo)
                 Console.WriteLine("La cantidad de dias de enero es: " & x)
             Case Meses.Abril
-                x = System.DateTime.DaysInMonth(año, Meses.Abril)
                 Console.WriteLine("La cantidad de dias de enero es: " & x)
             Case Meses.Mayo
-                x = System.DateTime.DaysInMonth(año, Meses.Mayo)
                 Console.WriteLine("La cantidad de dias de enero es: " & x)
             Case Meses.Junio
-                x = System.DateTime.DaysInMonth(año, Meses.Junio)
                 Console.WriteLine("La cantidad de dias de enero es: " & x)
             Case Meses.Julio
-                x = System.DateTime.DaysInMonth(año, Meses.Julio)
                 Console.WriteLine("La cantidad de dias de enero es: " & x)
             Case Meses.Agosto
-                x = System.DateTime.DaysInMonth(año, Meses.Agosto)
                 Console.WriteLine("La cantidad de dias de enero es: " & x)
             Case Meses.Septiembre
-                x = System.DateTime.DaysInMonth(año, Meses.Septiembre)
                 Console.WriteLine("La cantidad de dias de enero es: " & x)
             Case Meses.Octubre
-                x = System.DateTime.DaysInMonth(año, Meses.Octubre)
                 Console.WriteLine("La cantidad de dias de enero es: " & x)
             Case Meses.Noviembre
-                x = System.DateTime.DaysInMonth(año, Meses.Noviembre)
                 Console.WriteLine("La cantidad de dias de enero es: " & x)
             Case Meses.Diciembre
-                x = System.DateTime.DaysInMonth(año, Meses.Diciembre)
                 Console.WriteLine("La cantidad de dias de enero es: " & x)
         End Select
 

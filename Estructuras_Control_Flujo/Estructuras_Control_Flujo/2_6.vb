@@ -3,35 +3,35 @@
     Sub main()
         Dim precio As Single
 
-        Console.WriteLine("Ingrese Precio: ")
+        Console.Write("Ingrese Precio: ")
         precio = Console.ReadLine
         Dim descuento, subtotal, Montodescontado, cantidad As Integer
-        Console.WriteLine("Ingrese cantidad: ")
-        cantidad = Console.ReadLine
+		Console.Write("Ingrese cantidad: ")
+		cantidad = Console.ReadLine
 
-        Select Case cantidad
-            Case >= 10 And cantidad <= 50
-                descuento = 5
-                subtotal = cantidad * precio
-                Montodescontado = subtotal * descuento / 100
-                Console.WriteLine("Subtotal: " & subtotal & "Porcentaje descontado: " & descuento & " % " & " Monto Descontado: " & Montodescontado & " EL total es: " & subtotal - Montodescontado)
-            Case >= 51 And cantidad <= 250
-                descuento = 10
-                subtotal = cantidad * precio
-                Montodescontado = subtotal * descuento / 100
-                Console.WriteLine("Subtotal: " & subtotal & "Porcentaje descontado: " & descuento & " % " & " Monto Descontado: " & Montodescontado & " EL total es: " & subtotal - Montodescontado)
-            Case > 250
-                descuento = 20
-                subtotal = cantidad * precio
-                Montodescontado = subtotal * descuento / 100
-                Console.WriteLine("Subtotal: " & subtotal & "Porcentaje descontado: " & descuento & " % " & " Monto Descontado: " & Montodescontado & " EL total es: " & subtotal - Montodescontado)
-            Case Else
-                descuento = 0
-                subtotal = precio
-                Montodescontado = subtotal * descuento / 100
-                Console.WriteLine("Subtotal: " & subtotal & "Porcentaje descontado: " & descuento & " % " & " Monto Descontado: " & Montodescontado & " EL total es: " & subtotal - Montodescontado)
-        End Select
-        Console.ReadKey()
+		Select Case cantidad
+			Case 10 To 50
+				descuento = 5
+				subtotal = cantidad * precio
+				Montodescontado = subtotal * descuento / 100
+			Case 51 To 250
+				descuento = 10
+				subtotal = cantidad * precio
+				Montodescontado = subtotal * descuento / 100
+			Case > 250
+				descuento = 20
+				subtotal = cantidad * precio
+				Montodescontado = subtotal * descuento / 100
+			Case Else
+				descuento = 0
+				subtotal = precio * cantidad
+				Montodescontado = subtotal * descuento / 100
+		End Select
+		Console.WriteLine("El subtotal es: " & subtotal)
+		Console.WriteLine("El porcentaje Descontado es: " & descuento & "%")
+		Console.WriteLine("El monto descontado es: " & Montodescontado)
+		Console.WriteLine("el total es:" & subtotal - Montodescontado)
+		Console.ReadKey()
 
 
 
