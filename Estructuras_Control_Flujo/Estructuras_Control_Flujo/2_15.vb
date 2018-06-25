@@ -23,7 +23,7 @@
 		Console.Write("Ingrese cantidad de meses: ")
 		mes = Console.ReadLine
 
-		Console.WriteLine(vbCrLf & "{0, 4} {1, 15} {2, 15} {3, 15}", "MES", "CAPITAL", "INTERES", "SALDO")
+		Console.WriteLine(vbCrLf & "{0, 4} {1, 15} {2, 15} {3, 15}", "Mes", "Capital", "Interes", "Saldo")
 
 		For n = 1 To mes
 			interes = Capital * InteresMensual
